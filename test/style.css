@@ -1,0 +1,73 @@
+html{
+    height: 100%;
+}
+
+body {
+    background: url(4245312-airport_1.jpg) no-repeat;
+    color: #f0f0f0;
+    font-size: 110%;
+    font-family: Verdana, Arial;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#header {
+    min-height: 85px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+
+#content {
+    min-height: 100%;
+    width: 100%;
+}
+
+#content .add {
+    float: right;
+    height: 650px;
+    margin-top: 40px;
+    width: 450px;
+}
+
+#content .search {
+    color: #330000;
+    position: absolute;
+    top: 40px;
+}
+
+#content table tr td {
+    border-bottom: 1px solid #fff;
+}
+
+#footer {
+    bottom: 0;
+    color: #00ff00;
+    height: 5%;
+    left: 0;
+    min-height: 45px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.res {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    height: 180px;
+    margin: 5px auto;
+    width: 300px;
+}
+
+.res a {
+    display: block;
+    color: #f00;
+    height: 25px;
+    width: 150px;
+}
+
+.clear{
+    clear: both;
+}

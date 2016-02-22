@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">    
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="keywords..." />
+    <meta name="description" content="description..." />
+
+    <title>Test</title>
+</head>
+<body>
+    <div id="header">
+        Тестове завдання
+        <hr />
+    </div>
+    <div id="content">
+        <form name="search_form" action="script.php" method="post" class="add">
+            <h2>Новий маршрут</h2>
+            <table>
+                <tr>
+                    <td width="200px">
+                        Назва маршруту:
+                    </td>
+                    <td>
+                        <input type="text" name="name"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td width="225px">
+                        Пункт вiдправлення:
+                    </td>
+                    <td>
+                        <input type="text" name="input"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Пункт прибуття:
+                    </td>
+                    <td>
+                        <input type="text" name="output" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Час:
+                    </td>
+                    <td>
+                        <input type="text" name="time" /> хв
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Відстань:
+                    </td>
+                    <td>
+                        <input type="text" name="distance" /> км
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Вартість:
+                    </td>
+                    <td>
+                        <input type="text" name="price" /> грн
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Пересадки, якщо є (AB, BC, CF, ...):
+                    </td>
+                    <td>
+                        <input type="text" name="p" /> маршрути через ","
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="add" value="Додати новий маршрут" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div class="clear"></div>
+        <form name="search_form" action="script.php" method="post" class="search">
+            <h2>Пошук оптимального маршруту</h2>
+            <table>
+                <tr>
+                    <td width="200px">
+                        Пункт вiдправлення:
+                    </td>
+                    <td>
+                        <select name="input">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Пункт прибуття:
+                    </td>
+                    <td>
+                        <select name="output">
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Шукати по:
+                    </td>
+                    <td>
+                        <select name="select">
+                            <option value="time">часу</option>
+                            <option value="distance">вiдстанi</option>
+                            <option value="price">вартостi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="search" value="Знайти" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <hr />
+        2016 &copy;MarkO
+    </div>
+</body>
+</html>
